@@ -1,0 +1,22 @@
+*{
+    background-color: #282828 ;
+    color: white;
+}
+
+.white_text{
+    color: white;
+}
+
+.content_width{
+    width: 50dvw;
+}
+
+.background_color{
+    background-color: #282828 !important;
+}
+
+.form-switch.form-switch-lg .form-check-input {
+    height: 2rem;
+    width: calc(3rem + 0.75rem);
+    border-radius: 4rem;
+  }

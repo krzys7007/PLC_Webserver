@@ -1,0 +1,142 @@
+<!-- AWP_In_Variable Name='"Dane_Komendy".Data_To_Sql.nr_seryjny' -->
+<!-- AWP_In_Variable Name='"Dane_Komendy".Data_To_Sql.nr_modelu' -->
+<!-- AWP_In_Variable Name='"Dane_Komendy".Data_To_Sql.operator' -->
+<!-- AWP_In_Variable Name='"Dane_Komendy".Data_To_Sql.kolor' -->
+<!-- AWP_In_Variable Name='"Dane_Komendy".Data_To_Sql.elek_szyb' -->
+<!-- AWP_In_Variable Name='"Dane_Komendy".Data_To_Sql.strona' -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>PLC_Krzys_Webserver</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.3.3 -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="plc_css.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div
+                class="container container-md content_width"
+            >
+                <div class="row justify-content-md-center">
+                    <div class="col text-center p-5 padding_top">
+                        <h1 class="fw-bolder">Wpisz Dane</h1>
+                    <form method="post" >
+                        <div class="row row-cols-3">
+                            <div class="col col-6">
+                                <div class="row">
+                                    <div class="col col-md-5 align-self-center text-end me-0 pe-0">
+                                        <label class="form-level"> Nr Seryjny: </label>
+                                    </div>
+                                    <div class="col text-center col-md-6 align-self-center ms-0 ps-0">
+                                        <input name='"Dane_Komendy".Data_To_Sql.nr_seryjny' class="form-control-plaintext white_text border border-primary border-3 p-2 m-3 rounded" type="number" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-5">
+                                <div class="row">
+                                    <div class="col col-md-5 align-self-center text-end me-0 pe-0">
+                                        <label class="form-level"> Nr Modelu: </label>
+                                    </div>
+                                    <div class="col text-center col-md-6 align-self-center ms-0 ps-0">
+                                        <input name='"Dane_Komendy".Data_To_Sql.nr_modelu' class="form-control-plaintext white_text border border-primary border-3 p-2 m-3 rounded" type="number" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-1"></div>
+                            <div class="col col-6">
+                                <div class="row">
+                                    <div class="col col-md-5 align-self-center text-end me-0 pe-0">
+                                        <label class="form-level"> Operator: </label>
+                                    </div>
+                                    <div class="col text-center col-md-6 align-self-center ms-0 ps-0">
+                                        <select name='"Dane_Komendy".Data_To_Sql.operator' id="cars" class="form-select white_text border border-primary border-3 p-2 m-3 rounded background_color">
+                                            <option value="op1">Krzysztof Nowakowski</option>
+                                            <option value="op2">Jan Kowalski</option>
+                                            <option value="op3">Henryk Dlugopolski</option>
+                                            <option value="op4">Lukasz Nowolisyj</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-5">
+                                <div class="row">
+                                    <div class="col col-md-5 align-self-center text-end me-0 pe-0">
+                                        <label class="form-level"> Kolor: </label>
+                                    </div>
+                                    <div class="col text-center col-md-6 align-self-center ms-0 ps-0">
+                                        <input name='"Dane_Komendy".Data_To_Sql.kolor' class="form-control-plaintext white_text border border-primary border-3 p-2 m-3 rounded" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-1"></div>
+                            <div class="col col-6">
+                                <div class="row pt-2">
+                                    <div class="col col-md-5 align-self-center text-end me-0 pe-0">
+                                        <label class="form-level"> Elektryczne Szyby: </label>
+                                    </div>
+                                    <div class="col text-center col-md-6 align-self-center">
+                                        <div class="form-check form-switch form-switch-lg">
+                                            <input name='Data_To_Sql.elek_szyb' class="form-check-input border border-primary border-3 p-2 m-3 rounded" type="checkbox" id="flexSwitchCheckDefault">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-5">
+                                <div class="row">
+                                    <div class="col col-md-5 align-self-center text-end me-0 pe-0">
+                                        <label class="form-level"> Strona: </label>
+                                    </div>
+                                    <div class="col text-center col-md-6 align-self-center ms-0 ps-0">
+                                        <select name='"Dane_Komendy".Data_To_Sql.strona' id="cars" class="form-select white_text border border-primary border-3 p-2 m-3 rounded background_color">
+                                            <option value="s1">Lewe - Tylnie</option>
+                                            <option value="s2">Lewe - Przednie</option>
+                                            <option value="s3">Prawe - Tylnie</option>
+                                            <option value="s4">Prawe - Przednie</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-1"></div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-warning btn-lg">Save</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //Auto login
+                var spost = 'Login=admin&Password=';
+                $.post("/FormLogin",spost,function(result){});
+            });
+            </script>
+    </body>
+</html>
